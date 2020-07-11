@@ -23,15 +23,17 @@ def bonus
   #code your solution here:
 
   epic_tragedy.collect do |key,value|
-
-    if epic_tragedy[:montague][:hero][:status] == "alive"
-      epic_tragedy[:montague][:hero][:status] = "dead"
-    elsif epic_tragedy[:capulet][:heroine][:status] == "alive"
-      epic_tragedy[:capulet][:heroine][:status] = "dead"
-
-    end
-  end
-
+######## OLD METHOD i was unhappy with
+##
+##    if epic_tragedy[:montague][:hero][:status] == "alive"
+##      epic_tragedy[:montague][:hero][:status] = "dead"
+##    elsif epic_tragedy[:capulet][:heroine][:status] == "alive"
+##      epic_tragedy[:capulet][:heroine][:status] = "dead"
+##
+##    end
+##  end
+##
+########
   #Don't touch the following line! The `bonus` method must return our newly modified epic tragedy hash
   epic_tragedy
 end
