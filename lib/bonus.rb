@@ -24,6 +24,7 @@ def bonus
 
 
 ######## OLD METHOD i was unhappy with
+##
 ##      epic_tragedy.collect do |key,value|
 ##    if epic_tragedy[:montague][:hero][:status] == "alive"
 ##      epic_tragedy[:montague][:hero][:status] = "dead"
