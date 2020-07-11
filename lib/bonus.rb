@@ -35,6 +35,8 @@ def bonus
 ##  end
 ##
 ########
+
+## New method I feel is a better solution
 epic_tragedy.collect do |key,value_hash|
 
   value_hash.collect do |name,attribute|
