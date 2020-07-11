@@ -34,6 +34,23 @@ def bonus
 ##  end
 ##
 ########
+epic_tragedy.collect do |key,value_hash|
+
+  value_hash.collect do |name,attribute|
+    if name == :hero || name == :heroine
+binding.pry
+      attribute.collect do |k,v|
+        if k == :status
+            epic_tragedy[key][name][k] = "dead"
+
+        end
+
+      end
+
+    end
+
+  end
+end
   #Don't touch the following line! The `bonus` method must return our newly modified epic tragedy hash
   epic_tragedy
 end
