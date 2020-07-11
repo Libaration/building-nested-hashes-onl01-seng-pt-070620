@@ -38,7 +38,7 @@ epic_tragedy.collect do |key,value_hash|
 
   value_hash.collect do |name,attribute|
     if name == :hero || name == :heroine
-binding.pry
+
       attribute.collect do |k,v|
         if k == :status
             epic_tragedy[key][name][k] = "dead"
